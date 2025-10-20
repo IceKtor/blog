@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приключенческий блог</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">ПутешествиЯ с лайками</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#posts">Посты</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://dzen.ru/anyayva">Дзен</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary ms-3" data-bs-toggle="modal" data-bs-target="#authModal">Войти / Зарегистрироваться</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+        <div>
+                    <h1>Лайфстайл-блог о ездовых якутских лайках</h1>
+                    <p>«Дайте мне зиму и собачью упряжку, а остальное возьмите себе!» - Кнуд Расмуссен</p>
+                    <a href="#posts" class="btn btn-light btn-lg mt-4">Начать путешествие</a>
+        </div>
+    </section>
+
+
+
+    <div class="container-md">
+
+    <section id="posts" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-light">Последние приключения</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                            <div class="card post-card h-100">
+                                <img src="https://cs14.pikabu.ru/post_img/2022/11/12/4/1668226454163327861.webp" class="card-img-top" alt="Горы">
+                                <div class="card-body">
+                                    <h5 class="card-title">Покорение Кавказа</h5>
+                                    <p class="card-text">В конце мая мы с хвостатыми побывали в горах Кваказа, а точнее в районе Большого Тхача и на самой горе 2368м.</p>
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal1">Подробнее</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card post-card h-100">
+                        <img src="https://cs14.pikabu.ru/post_img/2022/11/12/4/1668226599192676194.webp" class="card-img-top" alt="Океан">
+                                <div class="card-body">
+                                        <h5 class="card-title">Закрыли ялайке ЮЧРКФ и ЮЧР</h5>
+                                                <p class="card-text">Вот и снова я дошла до своего маленького блога
+                                                Хочу подытожить про выставки якутской лайки Рысь.</p>
+                                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal2">Подробнее</button>
+                                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                                <div class="card post-card h-100">
+                                                <img src="https://cs14.pikabu.ru/post_img/2022/11/12/4/1668226735114455622.webp" class="card-img-top" alt="Джунгли">
+                                                <div class="card-body">
+                                                            <h5 class="card-title">Чудесная весна в Адыгее</h5>
+                                                            <p class="card-text">Брать или не брать собаку с собой в поездку каждый решает сам. Но я вижу, как они счастливы на природе, как мои собаки любят горы и свободу...</p>
+                                                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal3">Подробнее</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                            <div class="col-lg-4 col-md-6">
+                                                <div class="card post-card h-100">
+                                                    <img src="https://avatars.dzeninfra.ru/get-zen_brief/271828/pub_67249f550353de3ba8879594_6724a08eaf9fc76a9b006ca1/scale_1200" class="card-img-top" alt="Горы">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Покорение Кавказа</h5>
+                                                        <p class="card-text">В конце мая мы с хвостатыми побывали в горах Кваказа, а точнее в районе Большого Тхача и на самой горе 2368м.</p>
+                                                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal1">Подробнее</button>
+                                                    </div>
+                                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card post-card h-100">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_brief/7688876/pub_63803d28c5d95c2dd910fc7f_63803d98d5729024681e3aa2/scale_2400" class="card-img-top" alt="Океан">
+                        <div class="card-body">
+                                <h5 class="card-title">Закрыли ялайке ЮЧРКФ и ЮЧР</h5>
+                                <p class="card-text">Вот и снова я дошла до своего маленького блога
+                                                Хочу подытожить про выставки якутской лайки Рысь.</p>
+                                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal2">Подробнее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card post-card h-100">
+                            <img src="https://avatars.dzeninfra.ru/get-zen_brief/7044885/pub_636c76e5678af431111c380c_636c770fc94ac975f3f366a4/scale_2400" class="card-img-top" alt="Джунгли">
+                            <div class="card-body">
+                                                <h5 class="card-title">Чудесная весна в Адыгее</h5>
+                                                <p class="card-text">Брать или не брать собаку с собой в поездку каждый решает сам. Но я вижу, как они счастливы на природе, как мои собаки любят горы и свободу...</p>
+                                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal3">Подробнее</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                    <div class="col-lg-4 col-md-6">
+                    <div class="card post-card h-100">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_brief/7731634/pub_63448700f9c01739a32ee8b3_63448703bcb2992d67b64aac/scale_1200" class="card-img-top" alt="Горы">
+                        <div class="card-body">
+                                            <h5 class="card-title">Покорение Кавказа</h5>
+                                            <p class="card-text">В конце мая мы с хвостатыми побывали в горах Кваказа, а точнее в районе Большого Тхача и на самой горе 2368м.</p>
+                                                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal1">Подробнее</button>
+                                                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                                            <div class="card post-card h-100">
+                                                <img src="https://avatars.dzeninfra.ru/get-zen_brief/6354854/pub_62a9fbdeba618c20693c7d33_62aa02d8e364590358d18f63/scale_2400" class="card-img-top" alt="Океан">
+                                                <div class="card-body">
+                            <h5 class="card-title">Закрыли ялайке ЮЧРКФ и ЮЧР</h5>
+                                                <p class="card-text">Вот и снова я дошла до своего маленького блога
+                                                Хочу подытожить про выставки якутской лайки Рысь.</p>
+                                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal2">Подробнее</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                            <div class="card post-card h-100">
+                                <img src="https://avatars.dzeninfra.ru/get-zen_brief/5410954/pub_62405c8a4381372135c799de_624060c01fb46839d73c7d14/scale_1200" class="card-img-top" alt="Джунгли">
+                                <div class="card-body">
+                                                <h5 class="card-title">Чудесная весна в Адыгее</h5>
+                                                            <p class="card-text">Брать или не брать собаку с собой в поездку каждый решает сам. Но я вижу, как они счастливы на природе, как мои собаки любят горы и свободу...</p>
+                                                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#postModal3">Подробнее</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg">
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://avatars.dzeninfra.ru/get-zen_doc/5212831/pub_6229f962164c08490d620d20_622a0185de93223578720468/scale_1200" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+        <h2>Моя якуточка Рысь!</h2>
+        <p>Первые дни в новом доме!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://avatars.dzeninfra.ru/get-zen_doc/5323197/pub_6229f962164c08490d620d20_622a01586c25d8324620ded6/scale_1200" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+        <h2>Малышка Рысь сразу приметила лежак</h2>
+        <p>Родители у щеночка тоже хорошие, с хорошими кровями, характером, внешностью, папа работал в упряжке и проверен по потомству, а еще знаменитый "тот еще кобель".</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://avatars.dzeninfra.ru/get-zen_doc/5253732/pub_6229f962164c08490d620d20_622a01b0612be0664c6657e8/scale_1200" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+        <h2>Веселая девочка оказалась</h2>
+        <p>Прошло еще немного времени...мои планы на будущее поменялись и стало понятно, что с 4 собаками осуществить их будет проблематично. Две взрослые и два щенка уже не хилая такая ответственность!</p>
+      </div>
+    </div>
+        <div class="carousel-item">
+      <img src="https://avatars.dzeninfra.ru/get-zen_doc/3937202/pub_6229f962164c08490d620d20_622a01d6164c08490d722a0b/scale_1200" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+        <h2>Явно мой щенок</h2>
+        <p>Вот такие муки выбора, кто-то скажет - ерунда, а я скажу, что всегда нужно взвешивать, кому сердцем, кому головой, кому как удобно.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+    <div class="col-md-1">
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                    <h2 class="fw-light">О блоге</h2>
+                                            <p class="lead">Всем здравствуйте!
+                        Я Анна, у меня три пушистые собаки: метис Айва, самоед Леля и якутская лайка Рысь.
+                        Мы путешествуем, ходим в походы, учимся взаимодействовать друг с другом и с окружающим миром.
+                        Занимаемся скиджорингом и каникроссом.
+На канале мои авторские тексты, фото и видео материал. Ниже можете ознакомится с моими соцсетями:</p>
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="https://dzen.ru/anyayva">Мой дзен</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="https://www.youtube.com/@%D0%9E%D1%85%D0%BE%D1%82%D0%B0%D1%81%D0%9B%D0%B0%D0%B9%D0%BA%D0%B0%D0%BC%D0%B8">Мой ютуб</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://rutube.ru/channel/43088913/videos/">Рутуб</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.hunting.ru/video/cat/92/">Хантинг</a>
+  </li>
+</ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_brief/6578950/pub_62a9fbdeba618c20693c7d33_62aa02d821bc8d13661d3f03/scale_2400" class="img-fluid rounded shadow" alt="Команда">
+                </div>
+                
+            </div>
+                                </div>
+                                
+                            </section>
+
+
+
+
+
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                <div class="modal-header">
+                                <h5 class="modal-title" id="authModalLabel">Вход / Регистрация</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs mb-3" id="authTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Вход</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Регистрация</button>
+                                                </li>
+                                    </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="login" role="tabpanel">
+                                                    <form>
+                                        <div class="mb-3">
+                                            <label for="loginEmail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="loginEmail">
+                                        </div>
+                                        <div class="mb-3">
+                                                        <label for="loginPassword" class="form-label">Пароль</label>
+                                                <input type="password" class="form-control" id="loginPassword">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Войти</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="register" role="tabpanel">
+                                        <form>
+                                            <div class="mb-3">
+                                                            <label for="registerName" class="form-label">Имя</label>
+                                                            <input type="text" class="form-control" id="registerName">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                                    <label for="registerEmail" class="form-label">Email</label>
+                                                                    <input type="email" class="form-control" id="registerEmail">
+                                                                </div>
+                                                    <div class="mb-3">
+                                                <label for="registerPassword" class="form-label">Пароль</label> 
+                                                <input type="password" class="form-control" id="registerPassword">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                                            </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="modal fade" id="postModal1" tabindex="-1" aria-labelledby="postModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                    <h5 class="modal-title" id="postModal1Label">Покорение Кавказа</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                                <img src="https://avatars.dzeninfra.ru/get-zen_brief/6354854/pub_62a9fbdeba618c20693c7d33_62aa02d8265c82555ecabda0/scale_2400" class="img-fluid mb-3 rounded" alt="Горы">
+                                <p>Всем здравствуйте!
+            В конце мая мы с хвостатыми побывали в горах Кваказа, а точнее в районе Большого Тхача и на самой горе 2368м. Большой Тхач находится на границе Адыгеи и Краснодарского края.
+            Я признаюсь, что недооценивала раньше эти места, но тем сильнее было мое удивление! Весна здесь прекрасна! Окружающие пейзажи радуют глаз, воздух чист и прозрачен. Про воздух меня поймут не все, но для жителей больших городов это действительно важно.
+            С Большого Тхача открывается красивейшая панорама горной гряды Кавказского хребта. Заснеженные вершины вселяют чувство вечности и спокойствия...</p>
+                                <div class="video-embed">
+                                    <iframe src="https://dzen.ru/embed/vATIDbIv2FgI?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" title="Видео приключения" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <p>Я люблю горы, по этому для меня эти пейзажи особенно ценны.
+            Собакам тоже очень понравилось, бегали и играли, вокруг им головы кружили новые запахи, дневная жара и снежники, в которые они просто ныряли, самоед Леля даже полетла разок вниз по склону, но ледоруб в виде четырех лап и когтей помогли ей благополучно зарубиться и не улететь. Было совсем не смешно конечно...</p>
+                            </div>
+                        </div>
+        </div>
+    </div>
+
+                <div class="modal fade" id="postModal2" tabindex="-1" aria-labelledby="postModal2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                            <h5 class="modal-title" id="postModal2Label">Закрыли ялайке ЮЧРКФ и ЮЧР.</h5>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://avatars.dzeninfra.ru/get-zen_doc/5372100/pub_63be863c681b312d2ecf7133_63be87c994176a06c221be27/scale_1200" class="img-fluid mb-3 rounded" alt="Спортзал">
+                                            <p>Всем здравствуйте!
+
+Вот и снова я дошла до своего маленького блога
+
+Хочу подытожить про выставки якутской лайки Рысь.
+
+Рысюха закрыла по САС-кам Юного чемпиона РКФ и Юного Чемпиона России. Осталось поменять щенячью метрику на родословную и написать в РКФ для присвоения титула! В общем, дело за бумажками, но бумажками важными!
+
+    </p>
+                        <div class="video-embed">
+                            <iframe src="https://dzen.ru/embed/vac-ohhssPQ0?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" title="Видео серфинга" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>Да, я до сих пор не поменяла щенячку, до праздников было совсем не до этого, а после так и тем более. В феврале хотели посетить монопородную выставку якутских лаек в Москве, но собака моя лысая и идти на выставки смысла нет. Вот так!
+
+    Хендлер: Наталья Мельникова.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal3" tabindex="-1" aria-labelledby="postModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="postModal3Label">Чудесная весна в Адыгее </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://avatars.dzeninfra.ru/get-zen_brief/8970805/pub_63e2c308f26be2793e6622e5_63e2c344a1c2620f8f318deb/scale_1200" class="img-fluid mb-3 rounded" alt="Песик">
+                                            <p>Это была чудесная весна в Адыгее ❤️🥰
+                        Брать или не брать собаку с собой в поездку каждый решает сам. Но я вижу, как они счастливы на природе, как мои собаки любят горы и свободу...
+            Моя совесть просто не может мне позволить оставить их в четырех стенах дурацкого города дурацкой квартиры.</p>
+                                <div class="video-embed">
+                                    <img src="https://avatars.dzeninfra.ru/get-zen_brief/8895820/pub_63e2c308f26be2793e6622e5_63e2c34178dcb76c58f8d14c/scale_1200" class="img-fluid mb-3 rounded" alt="Песик">
+                                </div>
+                                <p>Я буду брать их с собой как можно чаще, пусть это и не просто, да и не дёшево. Но это мои хвостатые друзья и я сама их завела, по этому и развлекать их тоже мне</p>
+                            </div>
+                        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+            <footer id="footer" class="footer text-center">
+                                            <section id="contact" class="py-5">
+                                <div class="container">
+            <h2 class="text-center mb-5 fw-light">Связаться с нами</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Имя</label>
+                                                <input type="text" class="form-control" id="name">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="email" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="email">
+                                </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                                            <textarea class="form-control" id="message" rows="4"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                                    </form>
+                                            </div>
+                                        </div>
+        </div>
+    </section>
+                    <div class="container">
+                    <p>&copy; 2025 ПутешествиЯ с лайками. Все права защищены. | <a href="#" class="text-white">Политика конфиденциальности</a></p>
+                </div>
+            </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
