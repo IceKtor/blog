@@ -1,0 +1,65 @@
+{
+ "radish": {
+  "season": 0,
+  "days": 4,
+  "seed_price": 20,
+  "row": 0,
+  "item": "radish"
+ },
+ "potato": {
+  "season": 0,
+  "days": 6,
+  "seed_price": 50,
+  "row": 1,
+  "item": "potato"
+ },
+ "strawberry": {
+  "season": 0,
+  "days": 8,
+  "seed_price": 100,
+  "row": 2,
+  "item": "strawberry"
+ },
+ "corn": {
+  "season": 1,
+  "days": 7,
+  "seed_price": 60,
+  "row": 3,
+  "item": "corn"
+ },
+ "tomato": {
+  "season": 1,
+  "days": 8,
+  "seed_price": 70,
+  "row": 4,
+  "item": "tomato"
+ },
+ "melon": {
+  "season": 1,
+  "days": 10,
+  "seed_price": 120,
+  "row": 5,
+  "item": "melon"
+ },
+ "cabbage": {
+  "season": 2,
+  "days": 5,
+  "seed_price": 40,
+  "row": 6,
+  "item": "cabbage"
+ },
+ "beet": {
+  "season": 2,
+  "days": 6,
+  "seed_price": 45,
+  "row": 7,
+  "item": "beet"
+ },
+ "pumpkin": {
+  "season": 2,
+  "days": 9,
+  "seed_price": 100,
+  "row": 8,
+  "item": "pumpkin"
+ }
+}

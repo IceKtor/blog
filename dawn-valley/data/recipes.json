@@ -1,0 +1,63 @@
+[
+ {
+  "out": "chest",
+  "n": 1,
+  "need": {
+   "wood": 50
+  }
+ },
+ {
+  "out": "fence",
+  "n": 2,
+  "need": {
+   "wood": 2
+  }
+ },
+ {
+  "out": "path_stone",
+  "n": 1,
+  "need": {
+   "stone": 1
+  }
+ },
+ {
+  "out": "sprinkler",
+  "n": 1,
+  "need": {
+   "copper_ore": 2,
+   "iron_ore": 1,
+   "stone": 5
+  }
+ },
+ {
+  "out": "berry_snack",
+  "n": 1,
+  "need": {
+   "blackberry": 2
+  }
+ },
+ {
+  "out": "mushroom_soup",
+  "n": 1,
+  "need": {
+   "mushroom": 2,
+   "wild_onion": 1
+  }
+ },
+ {
+  "out": "fish_soup",
+  "n": 1,
+  "need": {
+   "carp": 1,
+   "potato": 1
+  }
+ },
+ {
+  "out": "veggie_stew",
+  "n": 1,
+  "need": {
+   "potato": 1,
+   "tomato": 1
+  }
+ }
+]

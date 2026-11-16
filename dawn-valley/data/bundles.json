@@ -1,0 +1,51 @@
+[
+ {
+  "id": "crops",
+  "name": "Урожай",
+  "need": {
+   "potato": 3,
+   "corn": 3,
+   "pumpkin": 2
+  },
+  "reward_money": 800,
+  "reward": {
+   "sprinkler": 2
+  }
+ },
+ {
+  "id": "fish",
+  "name": "Рыба",
+  "need": {
+   "carp": 3,
+   "perch": 2,
+   "pike": 1
+  },
+  "reward_money": 800,
+  "reward": {
+   "fish_soup": 3
+  }
+ },
+ {
+  "id": "ore",
+  "name": "Руда",
+  "need": {
+   "copper_ore": 10,
+   "iron_ore": 5,
+   "gold_ore": 3
+  },
+  "reward_money": 1500,
+  "reward": {}
+ },
+ {
+  "id": "wood",
+  "name": "Древесина",
+  "need": {
+   "wood": 80,
+   "stone": 30
+  },
+  "reward_money": 600,
+  "reward": {
+   "chest": 1
+  }
+ }
+]

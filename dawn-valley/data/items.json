@@ -1,0 +1,339 @@
+{
+ "hoe": {
+  "name": "Мотыга",
+  "cat": "tool",
+  "price": 0,
+  "desc": "Рыхлит землю под грядки."
+ },
+ "can": {
+  "name": "Лейка",
+  "cat": "tool",
+  "price": 0,
+  "desc": "Поливает грядки. Наполняется у воды."
+ },
+ "axe": {
+  "name": "Топор",
+  "cat": "tool",
+  "price": 0,
+  "desc": "Рубит деревья, ветки и пни."
+ },
+ "pickaxe": {
+  "name": "Кирка",
+  "cat": "tool",
+  "price": 0,
+  "desc": "Дробит камни и руду."
+ },
+ "rod": {
+  "name": "Удочка",
+  "cat": "tool",
+  "price": 0,
+  "desc": "Встань у воды и закинь."
+ },
+ "wood": {
+  "name": "Древесина",
+  "cat": "resource",
+  "price": 2,
+  "desc": "Прочный строительный материал."
+ },
+ "stone": {
+  "name": "Камень",
+  "cat": "resource",
+  "price": 2,
+  "desc": "Пригодится для крафта."
+ },
+ "fiber": {
+  "name": "Волокно",
+  "cat": "resource",
+  "price": 1,
+  "desc": "Остаётся после прополки сорняков."
+ },
+ "copper_ore": {
+  "name": "Медная руда",
+  "cat": "resource",
+  "price": 5,
+  "desc": "Добывается в шахте."
+ },
+ "iron_ore": {
+  "name": "Железная руда",
+  "cat": "resource",
+  "price": 10,
+  "desc": "Встречается на 4-м уровне шахты и глубже."
+ },
+ "gold_ore": {
+  "name": "Золотая руда",
+  "cat": "resource",
+  "price": 25,
+  "desc": "Только в глубине шахты (8+ уровень)."
+ },
+ "carp": {
+  "name": "Карась",
+  "cat": "fish",
+  "price": 30,
+  "desc": "Неприхотливая озёрная рыба."
+ },
+ "perch": {
+  "name": "Окунь",
+  "cat": "fish",
+  "price": 50,
+  "desc": "Полосатый хищник. Весна, осень, зима."
+ },
+ "pike": {
+  "name": "Щука",
+  "cat": "fish",
+  "price": 120,
+  "desc": "Сильная и быстрая. Лето и зима."
+ },
+ "trout": {
+  "name": "Форель",
+  "cat": "fish",
+  "price": 80,
+  "desc": "Весна и лето."
+ },
+ "catfish": {
+  "name": "Сом",
+  "cat": "fish",
+  "price": 200,
+  "desc": "Редкий усатый гигант. Весна и осень."
+ },
+ "bream": {
+  "name": "Лещ",
+  "cat": "fish",
+  "price": 60,
+  "desc": "Лето и осень."
+ },
+ "wild_onion": {
+  "name": "Дикий лук",
+  "cat": "forage",
+  "price": 25,
+  "desc": "Весенняя зелень из леса.",
+  "energy": 10
+ },
+ "daffodil": {
+  "name": "Нарцисс",
+  "cat": "forage",
+  "price": 30,
+  "desc": "Первый весенний цветок."
+ },
+ "blackberry": {
+  "name": "Ежевика",
+  "cat": "forage",
+  "price": 20,
+  "desc": "Летняя лесная ягода.",
+  "energy": 12
+ },
+ "chamomile": {
+  "name": "Ромашка",
+  "cat": "forage",
+  "price": 25,
+  "desc": "Летом растёт на опушках."
+ },
+ "mushroom": {
+  "name": "Гриб",
+  "cat": "forage",
+  "price": 40,
+  "desc": "Осенний лесной гриб.",
+  "energy": 15
+ },
+ "hazelnut": {
+  "name": "Лесной орех",
+  "cat": "forage",
+  "price": 45,
+  "desc": "Осенью падает с орешника.",
+  "energy": 12
+ },
+ "winter_root": {
+  "name": "Зимний корень",
+  "cat": "forage",
+  "price": 50,
+  "desc": "Сладкий корень из-под снега.",
+  "energy": 15
+ },
+ "holly": {
+  "name": "Остролист",
+  "cat": "forage",
+  "price": 40,
+  "desc": "Зимнее украшение."
+ },
+ "berry_snack": {
+  "name": "Ягодный перекус",
+  "cat": "food",
+  "price": 60,
+  "desc": "Восстанавливает силы.",
+  "energy": 45
+ },
+ "mushroom_soup": {
+  "name": "Грибной суп",
+  "cat": "food",
+  "price": 150,
+  "desc": "Густой и сытный.",
+  "energy": 80
+ },
+ "fish_soup": {
+  "name": "Уха",
+  "cat": "food",
+  "price": 160,
+  "desc": "Наваристая уха с картофелем.",
+  "energy": 90
+ },
+ "veggie_stew": {
+  "name": "Овощное рагу",
+  "cat": "food",
+  "price": 220,
+  "desc": "Картофель и томаты.",
+  "energy": 100
+ },
+ "chest": {
+  "name": "Сундук",
+  "cat": "craft",
+  "price": 0,
+  "desc": "Хранилище на 20 ячеек. Поставь на землю."
+ },
+ "sprinkler": {
+  "name": "Разбрызгиватель",
+  "cat": "craft",
+  "price": 0,
+  "desc": "Каждое утро поливает 4 соседние грядки."
+ },
+ "fence": {
+  "name": "Забор",
+  "cat": "craft",
+  "price": 1,
+  "desc": "Деревянная секция забора."
+ },
+ "path_stone": {
+  "name": "Каменная плитка",
+  "cat": "craft",
+  "price": 1,
+  "desc": "Мостит дорожки. На ней нельзя копать."
+ },
+ "ancient_coin": {
+  "name": "Старинная монета",
+  "cat": "misc",
+  "price": 1000,
+  "desc": "Найдена на самом дне шахты."
+ },
+ "seed_radish": {
+  "name": "Семена: редис",
+  "cat": "seed",
+  "price": 10,
+  "desc": "Сезон: весна. Растёт 4 дн.",
+  "crop": "radish"
+ },
+ "radish": {
+  "name": "Редис",
+  "cat": "crop",
+  "price": 40,
+  "desc": "Урожай (весна).",
+  "energy": 15
+ },
+ "seed_potato": {
+  "name": "Семена: картофель",
+  "cat": "seed",
+  "price": 25,
+  "desc": "Сезон: весна. Растёт 6 дн.",
+  "crop": "potato"
+ },
+ "potato": {
+  "name": "Картофель",
+  "cat": "crop",
+  "price": 100,
+  "desc": "Урожай (весна).",
+  "energy": 20
+ },
+ "seed_strawberry": {
+  "name": "Семена: клубника",
+  "cat": "seed",
+  "price": 50,
+  "desc": "Сезон: весна. Растёт 8 дн.",
+  "crop": "strawberry"
+ },
+ "strawberry": {
+  "name": "Клубника",
+  "cat": "crop",
+  "price": 220,
+  "desc": "Урожай (весна).",
+  "energy": 25
+ },
+ "seed_corn": {
+  "name": "Семена: кукуруза",
+  "cat": "seed",
+  "price": 30,
+  "desc": "Сезон: лето. Растёт 7 дн.",
+  "crop": "corn"
+ },
+ "corn": {
+  "name": "Кукуруза",
+  "cat": "crop",
+  "price": 130,
+  "desc": "Урожай (лето)."
+ },
+ "seed_tomato": {
+  "name": "Семена: томат",
+  "cat": "seed",
+  "price": 35,
+  "desc": "Сезон: лето. Растёт 8 дн.",
+  "crop": "tomato"
+ },
+ "tomato": {
+  "name": "Томат",
+  "cat": "crop",
+  "price": 160,
+  "desc": "Урожай (лето).",
+  "energy": 20
+ },
+ "seed_melon": {
+  "name": "Семена: арбуз",
+  "cat": "seed",
+  "price": 60,
+  "desc": "Сезон: лето. Растёт 10 дн.",
+  "crop": "melon"
+ },
+ "melon": {
+  "name": "Арбуз",
+  "cat": "crop",
+  "price": 300,
+  "desc": "Урожай (лето).",
+  "energy": 40
+ },
+ "seed_cabbage": {
+  "name": "Семена: капуста",
+  "cat": "seed",
+  "price": 20,
+  "desc": "Сезон: осень. Растёт 5 дн.",
+  "crop": "cabbage"
+ },
+ "cabbage": {
+  "name": "Капуста",
+  "cat": "crop",
+  "price": 85,
+  "desc": "Урожай (осень).",
+  "energy": 20
+ },
+ "seed_beet": {
+  "name": "Семена: свёкла",
+  "cat": "seed",
+  "price": 22,
+  "desc": "Сезон: осень. Растёт 6 дн.",
+  "crop": "beet"
+ },
+ "beet": {
+  "name": "Свёкла",
+  "cat": "crop",
+  "price": 100,
+  "desc": "Урожай (осень).",
+  "energy": 15
+ },
+ "seed_pumpkin": {
+  "name": "Семена: тыква",
+  "cat": "seed",
+  "price": 50,
+  "desc": "Сезон: осень. Растёт 9 дн.",
+  "crop": "pumpkin"
+ },
+ "pumpkin": {
+  "name": "Тыква",
+  "cat": "crop",
+  "price": 250,
+  "desc": "Урожай (осень)."
+ }
+}
