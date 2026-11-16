@@ -38,6 +38,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if _done:
 		return
+	delta = minf(delta, 0.05)  # при подвисании кадра рыба не срывается
 	_t += delta
 	var holding := Input.is_action_pressed("use")
 	bar_vel += (220.0 if holding else -240.0) * delta

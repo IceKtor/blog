@@ -20,6 +20,7 @@ func frames(n: int) -> void:
 func _ready() -> void:
 	SaveManager.delete_save()
 	Game.new_game()
+	Game.flags["intro"] = true  # письмо проверяется в input_test
 	g = load("res://scenes/game.tscn").instantiate()
 	add_child(g)
 	await frames(5)
@@ -153,8 +154,9 @@ func _ready() -> void:
 	f.fish_id = "pike"
 	g.open_modal(f)
 	await frames(10)
-	f._finish(true)
-	await frames(1)
+	if is_instance_valid(f) and not f._done:
+		f._finish(true)
+	await frames(2)
 	ok(g.modal == null and not Game.is_paused(), "окна закрываются, пауза снята")
 	var ds = g.DaySummary.new()
 	ds.report = {"items": [{"id": "radish", "n": 2, "value": 80}], "total": 80}
