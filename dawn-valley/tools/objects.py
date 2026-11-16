@@ -161,9 +161,8 @@ def lift():
 # --------------------- постройки (вид 3/4 как у фермерских домов) ---------------------
 def _roof(s, x0, x1, y0, y1, pal, over=2):
     r = s.add(pal, poly((x0 - over, y1), (x0 + 4, y0), (x1 - 4, y0), (x1 + over, y1)), mode='flat')
-    for y in range(y0 + 3, y1, 3):  # ряды черепицы
+    for y in (range(y0 + 3, y1, 3) if False else range(y0 + 8, y1, 8)):  # пара линий вместо черепицы
         s.dt(P[pal][1], line((x0 - over, y), (x1 + over, y)), on=r)
-        for x in range(x0 + (y % 6), x1, 6): s.px(x, y - 1, P[pal][1], on=r); s.px(x + 1, y - 2, P[pal][3], on=r)
     s.dt(P[pal][4], line((x0 + 4, y0 + 1), (x1 - 4, y0 + 1)), on=r)
     s.add(pal, rect(x0 - over, y1, x1 + over, y1 + 2), mode='flat', bias=-.3)
 

@@ -72,7 +72,7 @@ class _Meter extends Control:
 	func _draw() -> void:
 		var h: float = ui.H
 		var r := Rect2(2, 2, 26, h + 2)
-		draw_rect(r.grow(2), Color("3b1d1a"))
+		draw_rect(r.grow(2), Color("e8ecf4"))
 		draw_rect(r, Color("24508c"))
 		draw_rect(Rect2(3, 3, 24, h), Color("2e6aa8"))
 		var by: float = 3 + h - ui.bar_pos - ui.bar_h
@@ -80,8 +80,8 @@ class _Meter extends Control:
 		draw_rect(Rect2(4, by, 22, 2), Color("c4ec6a"))
 		draw_texture(Db.icon(ui.fish_id), Vector2(7, 3 + h - ui.fish_pos - 8))
 		var pr := Rect2(34, 2, 8, h + 2)
-		draw_rect(pr.grow(1), Color("3b1d1a"))
-		draw_rect(pr, Color("6b3824"))
+		draw_rect(pr.grow(1), Color("e8ecf4"))
+		draw_rect(pr, Color("1a2234"))
 		var ph: float = (h + 2) * clampf(ui.progress, 0.0, 1.0)
 		var col := Color("d84a3c").lerp(Color("64aa40"), clampf(ui.progress, 0.0, 1.0))
 		draw_rect(Rect2(34, 4 + h - ph, 8, ph), col)

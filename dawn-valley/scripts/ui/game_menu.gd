@@ -244,7 +244,7 @@ func _craft_list() -> Control:
 		var parts := PackedStringArray()
 		for k in r["need"]:
 			parts.append("%s ×%d" % [Db.item_name(k), int(r["need"][k])])
-		var l := UiKit.label("%s — %s" % [Db.item_name(r["out"]), ", ".join(parts)], 9, UiKit.INK if _can_craft(r) else Color("8a7a72"))
+		var l := UiKit.label("%s — %s" % [Db.item_name(r["out"]), ", ".join(parts)], 9, UiKit.INK if _can_craft(r) else Color("8a90a0"))
 		vb.add_child(l)
 	return vb
 
@@ -338,7 +338,7 @@ func bundle_card(b: Dictionary, donate: bool) -> Control:
 	vb.add_theme_constant_override("separation", 1)
 	p.add_child(vb)
 	var ok := Game.bundle_done(b)
-	vb.add_child(UiKit.label(b["name"] + ("  ✓ собрано" if ok else ""), 11, Color("2e723a") if ok else UiKit.INK2))
+	vb.add_child(UiKit.label(b["name"] + ("  ✓ собрано" if ok else ""), 11, Color("7ee07e") if ok else UiKit.INK2))
 	var row := HBoxContainer.new()
 	vb.add_child(row)
 	for item in b["need"]:

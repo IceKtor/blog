@@ -43,7 +43,7 @@ func _draw() -> void:
 			var s := str(n)
 			var wdt := f.get_string_size(s, HORIZONTAL_ALIGNMENT_LEFT, -1, 8).x
 			var p := Vector2(17 - wdt, 17)
-			draw_string_outline(f, p, s, HORIZONTAL_ALIGNMENT_LEFT, -1, 8, 2, UiKit.INK)
+			draw_string_outline(f, p, s, HORIZONTAL_ALIGNMENT_LEFT, -1, 8, 2, Color("1e1e2a"))
 			draw_string(f, p, s, HORIZONTAL_ALIGNMENT_LEFT, -1, 8, Color.WHITE)
 		if item["id"] == "can":
 			var k := float(Game.can_water) / Game.CAN_SIZE
@@ -51,5 +51,4 @@ func _draw() -> void:
 			draw_rect(Rect2(2, 15, 14 * k, 2), Color("4a8cc4"))
 	if hotkey != "":
 		var f := UiKit.font()
-		draw_string_outline(f, Vector2(2, 7), hotkey, HORIZONTAL_ALIGNMENT_LEFT, -1, 7, 2, Color("fae6a8"))
-		draw_string(f, Vector2(2, 7), hotkey, HORIZONTAL_ALIGNMENT_LEFT, -1, 7, UiKit.INK2)
+		draw_string(f, Vector2(2, 7), hotkey, HORIZONTAL_ALIGNMENT_LEFT, -1, 7, Color("8a96b0"))

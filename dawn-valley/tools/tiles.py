@@ -25,23 +25,12 @@ def img(a): return Image.fromarray(a, 'RGBA')
 
 def grass(season, seed, flowers=False, base_tone=2, dense=14):
     g = GRASS[season]; a = new(g[base_tone]); r = random.Random(seed)
-    # мягкие пятна более тёмного тона — без полос
-    for _ in range(3):
-        cx, cy = r.randrange(16), r.randrange(16)
-        for dy in range(-2, 3):
-            for dx in range(-3, 4):
-                if dx*dx/9 + dy*dy/4 <= 1 and r.random() < .8: put(a, cx+dx, cy+dy, g[base_tone-1] if season != 'winter' else g[3])
-    for _ in range(dense):  # пучки травы в форме «v»
+    for _ in range(dense // 2):  # просто несколько тёмных точек
         x, y = r.randrange(16), r.randrange(16)
-        if season == 'winter':
-            put(a, x, y, g[4]); put(a, x+1, y, g[1] if r.random() < .3 else g[3]); continue
-        put(a, x, y, g[1]); put(a, x-1, y-1, g[3]); put(a, x+1, y-1, g[3])
-        if r.random() < .5: put(a, x, y-1, g[4]); put(a, x+1, y+1, g[0])
+        put(a, x, y, g[base_tone - 1]); put(a, x + 1, y, g[base_tone - 1])
     if flowers:
-        for c in FLOWERS[season]:
-            x, y = r.randrange(16), r.randrange(16)
-            put(a, x, y, c); put(a, x+1, y, c); put(a, x, y+1, c); put(a, x+1, y+1, hx(c)[:3] + (255,))
-            put(a, x, y+2, g[1])
+        for c in FLOWERS[season][:2]:
+            put(a, r.randrange(16), r.randrange(16), c)
     return a
 
 def dirt_path(season, seed=3):

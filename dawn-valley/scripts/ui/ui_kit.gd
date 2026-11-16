@@ -1,11 +1,11 @@
 extends RefCounted
 ## Общий стиль интерфейса: пиксельный шрифт, деревянные рамки, ячейки предметов.
 
-const INK := Color("3b1d1a")
-const INK2 := Color("6b3824")
-const PAPER := Color("f7e3b5")
-const GOLD := Color("ffd36a")
-const LIGHT := Color("fff4e0")
+const INK := Color("e8ecf4")
+const INK2 := Color("ffd23c")
+const PAPER := Color("25304a")
+const GOLD := Color("ffd23c")
+const LIGHT := Color("ffffff")
 
 static var _theme: Theme
 static var _font: FontFile
@@ -40,7 +40,7 @@ static func tex_style(r: Rect2, m: int, content_h := 6, content_v := 5) -> Style
 
 
 static func panel_style() -> StyleBoxTexture:
-	return tex_style(Rect2(0, 0, 32, 32), 8, 9, 8)
+	return tex_style(Rect2(0, 0, 32, 32), 3, 7, 6)
 
 
 static func tooltip_style() -> StyleBoxTexture:
@@ -71,7 +71,7 @@ static func theme() -> Theme:
 	t.set_color("font_hover_color", "Button", INK)
 	t.set_color("font_pressed_color", "Button", INK)
 	t.set_color("font_focus_color", "Button", INK)
-	t.set_color("font_disabled_color", "Button", Color("5a4a44"))
+	t.set_color("font_disabled_color", "Button", Color("9aa0ac"))
 	t.set_stylebox("slider", "HSlider", flat(Color("6b3824"), INK, 1))
 	t.set_stylebox("grabber_area", "HSlider", flat(Color("e6b84a")))
 	t.set_stylebox("grabber_area_highlight", "HSlider", flat(Color("fae694")))
@@ -92,7 +92,7 @@ static func label(text: String, size := 10, color := INK, outline := false) -> L
 	l.add_theme_font_size_override("font_size", size)
 	l.add_theme_color_override("font_color", color)
 	if outline:
-		l.add_theme_color_override("font_outline_color", INK)
+		l.add_theme_color_override("font_outline_color", Color("1e1e2a"))
 		l.add_theme_constant_override("outline_size", 4)
 	return l
 

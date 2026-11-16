@@ -17,9 +17,9 @@ func _ready() -> void:
 	bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	add_child(bg)
-	var title := UiKit.label("Рассветная долина", 32, Color("fff4c0"), true)
+	var title := UiKit.label("Рассветная долина", 32, Color("ffffff"), true)
 	title.add_theme_constant_override("outline_size", 8)
-	title.add_theme_color_override("font_outline_color", Color("6b3824"))
+	title.add_theme_color_override("font_outline_color", Color("1e1e2a"))
 	title.set_anchors_preset(Control.PRESET_CENTER_TOP)
 	title.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	title.offset_top = 22

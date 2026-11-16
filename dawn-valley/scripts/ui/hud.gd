@@ -58,7 +58,7 @@ func _ready() -> void:
 	add_child(energy_bar)
 	# панель быстрого доступа
 	var bar := PanelContainer.new()
-	bar.add_theme_stylebox_override("panel", UiKit.tex_style(Rect2(0, 0, 32, 32), 8, 5, 5))
+	bar.add_theme_stylebox_override("panel", UiKit.tex_style(Rect2(0, 0, 32, 32), 3, 4, 4))
 	bar.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
 	bar.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	bar.grow_vertical = Control.GROW_DIRECTION_BEGIN
@@ -175,14 +175,12 @@ func note(icon: Texture2D, text: String) -> void:
 class _EnergyBar extends Control:
 	func _draw() -> void:
 		var r := Rect2(Vector2.ZERO, size)
-		draw_rect(r, Color("3b1d1a"))
-		draw_rect(r.grow(-1), Color("995a30"))
-		draw_rect(r.grow(-3), Color("2a1410"))
+		draw_rect(r, Color("e8ecf4"))
+		draw_rect(r.grow(-1), Color("1a2234"))
 		var k := Game.energy / Game.MAX_ENERGY
-		var inner := r.grow(-3)
+		var inner := r.grow(-2)
 		var fh := inner.size.y * k
 		var col := Color("64aa40") if k > 0.5 else (Color("ecc840") if k > 0.2 else Color("d84a3c"))
 		draw_rect(Rect2(inner.position.x, inner.end.y - fh, inner.size.x, fh), col)
-		draw_rect(Rect2(inner.position.x, inner.end.y - fh, 2, fh), col.lightened(0.3))
 		var b = preload("res://scripts/ui/ui_kit.gd").bolt()
 		draw_texture(b, Vector2((size.x - 8) / 2, -11))

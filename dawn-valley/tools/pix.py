@@ -52,6 +52,8 @@ P = {k: [hx(c) for c in v.split()] for k, v in {
 }.items()}
 RED, BLUE, YEL = hx('#c42c34'), hx('#3462b4'), hx('#e2b232')
 INK = hx('#1c1418')
+STUDENT = True          # простой стиль: плоская заливка + тёмный контур
+OUTLINE = hx('#1e1e2a')
 
 def _mask(w, h, fn):
     im = Image.new('L', (w, h), 0); fn(ImageDraw.Draw(im)); return np.array(im) > 0
@@ -123,7 +125,10 @@ class Spr:
             rt = np.zeros_like(m); rt[:, :-1] = m[:, 1:]
             val[m & (~up | ~lf)] = 0.8
             val[m & (~dn | ~rt)] = 0.25
-        val = val + bias
+        if STUDENT and mode != 'glow':
+            # одна заливка и грубая тень в нижней трети
+            val = np.where(v > 0.68, 0.2, 0.5) + bias * 0.5
+        val = val + (0 if STUDENT else bias)
         return np.clip(1 + np.floor(val*3.999), 1, 4).astype(int)
 
     def add(self, mat, *shapes, mode='round', sep=True, bias=0.0, on=None):
@@ -175,7 +180,7 @@ class Spr:
             e = filled & ~(pad[:-2, 1:-1] & pad[2:, 1:-1] & pad[1:-1, :-2] & pad[1:-1, 2:])
             for y, x in zip(*np.nonzero(e)):
                 p = self.pid[y, x]
-                if p > 0: out[y, x] = self.mats[p][0]
+                if p > 0: out[y, x] = OUTLINE if STUDENT else self.mats[p][0]
         return Image.fromarray(out, 'RGBA')
 
 def sheet(cells, cw, ch, cols):

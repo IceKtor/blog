@@ -14,7 +14,7 @@ func _ready() -> void:
 	t.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	vb.add_child(t)
 	if report.get("passed_out", false):
-		vb.add_child(UiKit.label("Ты уснул от усталости. Сегодня сил будет меньше.", 9, Color("ac2a30")))
+		vb.add_child(UiKit.label("Ты уснул от усталости. Сегодня сил будет меньше.", 9, Color("ff7070")))
 	var items: Array = report.get("items", [])
 	if items.is_empty():
 		vb.add_child(UiKit.label("Вчера ничего не было отгружено.", 10))
@@ -33,7 +33,7 @@ func _ready() -> void:
 	var tl := UiKit.label("Выручка:", 11)
 	tl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	tot.add_child(tl)
-	tot.add_child(UiKit.label("%d монет" % int(report.get("total", 0)), 11, Color("2e723a")))
+	tot.add_child(UiKit.label("%d монет" % int(report.get("total", 0)), 11, Color("7ee07e")))
 	vb.add_child(UiKit.label("%s, день %d. Игра сохранена." % [Db.SEASONS[GameClock.season], GameClock.day], 9, UiKit.INK2))
 	vb.add_child(UiKit.button("Доброе утро!", close))
 	if int(report.get("total", 0)) > 0:

@@ -27,8 +27,7 @@ void fragment() {
 	float n = noise(p * vec2(0.06, 0.12) + vec2(t * 0.5, t * 0.2)) * 0.6 + noise(p * vec2(0.13, 0.22) - vec2(t * 0.35, -t * 0.25)) * 0.4;
 	float s = noise(p * vec2(0.35, 0.7) + vec2(t * 1.6, t * 0.3));
 	vec4 col = c_mid;
-	if (n < 0.33) col = c_deep;
-	if (n > 0.64) col = c_light;
-	if (n > 0.6 && s > 0.86) col = c_foam;
+	if (n > 0.7) col = c_light;
+	if (n > 0.7 && s > 0.93) col = c_foam;
 	COLOR = col;
 }
